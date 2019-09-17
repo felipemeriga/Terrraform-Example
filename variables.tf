@@ -13,15 +13,15 @@ variable "region" {
 }
 variable "cidr_vpc" {
   description = "CIDR block for the VPC"
-  default = "172.31.0.0/16"
+  default = "10.0.0.0/16"
 }
 variable "cidr_subnet" {
   description = "CIDR block for the subnet"
-  default = "172.31.0.0/17"
+  default = "10.0.0.0/24"
 }
 variable "cidr_subnet_private" {
   description = "CIDR block for the private subnet"
-  default = "172.31.128.0/17"
+  default = "10.0.1.0/24"
 }
 variable "availability_zone" {
   description = "availability zone to create subnet"
